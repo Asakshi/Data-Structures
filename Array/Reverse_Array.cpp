@@ -1,6 +1,6 @@
 //
 
-#include <bits/stdc++.h>
+#include <iostream>
 
 void reverseArrar(int arr[], int size)
 {
