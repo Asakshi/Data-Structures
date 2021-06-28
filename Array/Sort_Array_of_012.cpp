@@ -29,8 +29,12 @@ void sort012(int arr[], int n)
     {
         if (arr[i] == 1)
         {
-            swap(&arr[i], &arr[count1]);
-            count1++;
+            if(count != i)
+            {
+                 swap(&arr[i], &arr[count1]);
+                 count1++;
+            }
+           
         }
     }
     //arr = [0,0,0,1,1,1,2,2,2]
