@@ -14,8 +14,11 @@ void sort012(int arr[], int n)
     {
         if (arr[i] == 0)
         {
-            swap(&arr[i], &arr[count0]);
-            count0++;
+            if (count != i)
+            {
+                swap(&arr[i], &arr[count0]);
+                count0++;
+             }
         }
     }
 
@@ -29,7 +32,7 @@ void sort012(int arr[], int n)
     {
         if (arr[i] == 1)
         {
-            if(count != i)
+            if(count1 != i)
             {
                  swap(&arr[i], &arr[count1]);
                  count1++;
